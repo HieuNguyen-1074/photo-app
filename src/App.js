@@ -30,9 +30,9 @@ function App() {
             <li><Link to='photo/123'>Go to edit photo page</Link></li>
           </ul>
           <Switch>
-            <Redirect exact from='/' to='/photo' />
+            {/* <Redirect exact from='/' to='/photo' /> */}
 
-            <Route path='/photo' component={Photo} />
+            <Route path='/' component={Photo} />
             <Route component={NotFound} />
 
           </Switch>
